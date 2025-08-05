@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className='min-h-screen bg-gray-50 px-4 py-8'>
       <div className='max-w-4xl mx-auto' >
-        <h1 className='text-4xl font-bold text-center text-gray-800 hover:text-gray-500 transition-colors mb-12' >Medi Book</h1>
+        <h1 className='text-4xl font-bold text-center p-4 text-gray-800 hover:text-gray-500 transition-colors mb-12' >Medi Book</h1>
 
         <div className='grid md:grid-cols-3 gap-6'>
           <div className='bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow' >
@@ -16,7 +16,7 @@ const HomePage = () => {
               <button className='w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors' onClick={()=> navigate("/tests")} >Available Lab Tests</button>
           </div>
 
-          <div className='bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow' >
+          <div className='bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg p-6 transition-shadow' >
             <div>
               <h3 className='text-lg font-semibold text-gray-800 mb-2'>Book Test</h3>
               <p className='text-gray-600 text-sm mb-4' >Schedule a new lab test appointment</p>

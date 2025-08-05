@@ -15,7 +15,6 @@ const Register = () => {
         setFormData((prev) => ({
             ...prev, [e.target.name]: e.target.value
         }))
-        
     }
 
     const handleSubmit = async(e)=>{
@@ -32,6 +31,11 @@ const Register = () => {
     }
   return (
     <div className='min-h-screen bg-gray-50 flex items-center justify-center px-4' >
+        <img 
+            className='w-[200px] h-[200px] px - 4 py-3'
+            
+            src="https://static.wixstatic.com/media/bcd733_65d06d59553c4d86ac90bf273962408c~mv2.jpg/v1/fit/w_2500,h_1330,al_c/bcd733_65d06d59553c4d86ac90bf273962408c~mv2.jpg" alt="" />
+        <br />
         <div className='max-w-md w-full bg-white rounded-lg shadow-md p-8' >
         <h2 className='text-2xl font-bold text-center text-gray-800 mb-8'>Register Here for Medi Book</h2>
         <form onSubmit={handleSubmit}>
@@ -40,7 +44,7 @@ const Register = () => {
             name = "name"
             value={formData.name}
             onChange={handleChange}
-            className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2'
+            className='w-full px-4  border border-gray-300 py-3 rounded-lg focus:ring-2'
 
             />
 
@@ -50,16 +54,14 @@ const Register = () => {
             <input type="text"
             placeholder='email'
             name="email"
-            value={formData.email}
-            onChange={handleChange} 
+            value={formData.email} onChange={handleChange} 
             className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2'
             required/>
 
             <br /><br />
 
             <input type="password" 
-            placeholder='Password'
-            name="password"
+            placeholder='Password' name="password"
             value={formData.password}
             className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2'
             onChange={handleChange}
