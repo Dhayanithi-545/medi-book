@@ -31,14 +31,16 @@ const Register = () => {
         }
     }
   return (
-    <div>
-        <h2>Register Here for Medi Book</h2>
+    <div className='min-h-screen bg-gray-50 flex items-center justify-center px-4' >
+        <div className='max-w-md w-full bg-white rounded-lg shadow-md p-8' >
+        <h2 className='text-2xl font-bold text-center text-gray-800 mb-8'>Register Here for Medi Book</h2>
         <form onSubmit={handleSubmit}>
             <input type="text"
             placeholder='Your Name' 
             name = "name"
             value={formData.name}
             onChange={handleChange}
+            className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2'
 
             />
 
@@ -50,6 +52,7 @@ const Register = () => {
             name="email"
             value={formData.email}
             onChange={handleChange} 
+            className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2'
             required/>
 
             <br /><br />
@@ -58,11 +61,15 @@ const Register = () => {
             placeholder='Password'
             name="password"
             value={formData.password}
+            className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2'
             onChange={handleChange}
             required />
-            
-            <button type='submit'>Register</button>
+            <br />
+            <br />
+            <button type='submit'
+            className='w-full bg-blue-600  text-white py-3 px-4 rounded-lg hover:bg-blue-700  font-medium'>Register</button>
         </form>
+    </div>
     </div>
   )
 }

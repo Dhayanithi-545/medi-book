@@ -7,6 +7,7 @@ import BookTest from './pages/BookTest'
 import BookingHistory from './pages/BookingHistory'
 import Register from './pages/Register'
 
+
 const App = () => {
   return (
     <BrowserRouter>
